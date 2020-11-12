@@ -10,14 +10,14 @@ git config --global --edit
 
 ### SQUASH
 - in git config:
-- squashes "n" last commits, does not ignore merge commits.
+- squashes "n" last commits, does not ignore merge commits
 - usage: `git squash 4`
 ```
 [alias]
 squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
 ```
 - With merge commits better to use interactive rebase
-  - `git rebase -i HEAD~4`
+  - `git rebase -i HEAD~4` // 4 is number without merge commits
   - first leave as `pick`
   - others set to `squash`
   - save and close editor
@@ -25,7 +25,7 @@ squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --
   - save and close editor
 
 ### FIX
-- when you need just to add some fix without creating a commit message
+- when you need just to add some fixes without creating a commit message
 - usage: `git fix`
 - has to be followed by: `git push -f`
 ```
