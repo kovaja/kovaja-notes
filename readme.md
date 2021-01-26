@@ -1,3 +1,5 @@
-### Repository of my cheet sheets
+### My cheat sheet for:
 
 - Git
+- Docker
+- Conemu
