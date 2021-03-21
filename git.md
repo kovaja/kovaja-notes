@@ -34,4 +34,10 @@ fix = "!f(){ git add . && git commit --amend --no-edit && echo \"Fixes added\"; 
 ```
 
 ## Set ssh auth for windows git bash
-- https://gist.github.com/jherax/979d052ad5759845028e6742d4e2343b
+- https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+- test your ssh with
+  - `ssh -T git@github.com`
+- if you can't push despite successful test check url for remote
+  - `git remote -v`
+- you can set remote url with
+  - `git remote set-url origin git@github.com:<Username>/<Project>.git`
