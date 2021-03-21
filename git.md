@@ -4,7 +4,7 @@
 ```
 git config --global --edit
 ```
-- it will open an editor, where you can see the path'
+- it will open an editor, where you can see the path
 
 ## Aliases
 
@@ -32,3 +32,6 @@ squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --
 [alias]
 fix = "!f(){ git add . && git commit --amend --no-edit && echo \"Fixes added\"; };f"
 ```
+
+## Set ssh auth for windows git bash
+- https://gist.github.com/jherax/979d052ad5759845028e6742d4e2343b
