@@ -14,4 +14,4 @@
 | Live tail logs |`docker logs --follow wonderful_panini` |  |
 | Stop container |`docker stop <container_id>` | you can use name instead of id |
 | Remove docker image |`docker image rm kovaja:hello-world-1 -f` | -f to force |
-| Get container CLI |`docker exec -it <container_id> /bin/bash` | |
+| Get container CLI |`docker exec -it <container_id> sh` | |
